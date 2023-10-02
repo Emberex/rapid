@@ -36,7 +36,7 @@
     "socket.io": "^2.5.0",
     "socket.io-client": "^2.5.0",
     "then-fs": "^2.0.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
