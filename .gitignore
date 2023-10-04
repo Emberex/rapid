@@ -3,3 +3,4 @@ node_modules
 /example/.jwtsecret
 /example/:memory
 .idea/
+/tests/testProject/dist

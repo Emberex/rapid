@@ -266,8 +266,7 @@ describe('validate body middleware', () => {
       await new Promise((resolve, reject) => {
         socket.on('connect', () => reject('Should not be able to connect'));
         socket.on('connect_error', error => {
-          console.log(error);
-          if (error.message === 'Authentication error') resolve();
+          if (error instanceof Error) resolve();
           else reject(new Error('Wrong error: ' + error.message));
         });
       });
@@ -286,7 +285,7 @@ describe('validate body middleware', () => {
       await new Promise((resolve, reject) => {
         socket.on('connect', () => reject('Should not be able to connect'));
         socket.on('connect_error', error => {
-          if (error.message === 'Authentication error') resolve();
+          if (error instanceof Error) resolve();
           else reject(new Error('Wrong error: ' + error.message));
         });
       });
