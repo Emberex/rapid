@@ -1,4 +1,4 @@
-const uuid = require('uuid/v4');
+const { randomUUID } = require('node:crypto');
 
 module.exports = () => ({
   socketIO: true,
@@ -8,7 +8,7 @@ module.exports = () => ({
   database: {
     dropWhenFinished: true,
     connection: {
-      database: 'rapid_test_' + uuid().replace(/-/g, '_'),
+      database: 'rapid_test_' + randomUUID().replace(/-/g, '_'),
     },
   },
 });

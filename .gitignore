@@ -2,3 +2,5 @@ node_modules
 /.jwtsecret
 /example/.jwtsecret
 /example/:memory
+.idea/
+/tests/testProject/dist
