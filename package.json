@@ -3,6 +3,9 @@
   "version": "0.0.112",
   "description": "",
   "main": "lib/Rapid.js",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "test": "NODE_ENV='test' jest",
     "lint": "eslint \"lib/**/*.js\"",
